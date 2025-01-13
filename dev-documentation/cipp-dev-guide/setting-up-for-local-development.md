@@ -49,7 +49,7 @@ Now we need to get the files downloaded for CIPP. In order to properly test as y
 
 :::info Forking repositories You're going to want to work on a [forked copy](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of the [CIPP](https://github.com/KelvinTegelaar/CIPP) and [CIPP-API](https://github.com/KelvinTegelaar/CIPP-API) repositories.
 
-For the remainder of this guide, we assume that your forks include both the 'dev' branches and the default branch, are up to date, and are at:
+For the rest of this guide we assume that your forks are at:
 
 * **CIPP** - `https://github.com/goodatforking/CIPP`
 * **CIPP-API** - `https://github.com/goodatforking/CIPP-API` :::
@@ -91,7 +91,7 @@ git remote add upstream https://github.com/KelvinTegelaar/CIPP-API
 cd ..
 ```
 
-When working on open source projects it's often helpful to keep your stable / tested code separate from your under-development code. We can achieve this with git by using _branches_. The CIPP project uses the following branches:
+When working on open source projects it's often helpful to keep your stable / tested code separate from your under-development code. We can achieve this with git by using _branches_. The CIPP project uses the following branches and these will need to exist in your forked copy:
 
 * `main` - Our stable/tested code - this is where releases are created (tagged).
 * `dev` - Our development code - this is the branch where active development takes place.
@@ -105,6 +105,14 @@ git checkout dev
 cd ..
 cd "CIPP-API"
 git checkout dev
+cd ..
+```
+
+To install dependencies, run `yarn install` in the CIPP directory.
+
+```bash
+cd "CIPP"
+yarn install
 cd ..
 ```
 
