@@ -45,7 +45,7 @@ Now we need to get the files downloaded for CIPP. In order to properly test as y
 
 :::info Forking repositories You're going to want to work on a [forked copy](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of the [CIPP](https://github.com/KelvinTegelaar/CIPP) and [CIPP-API](https://github.com/KelvinTegelaar/CIPP-API) repositories.
 
-For the rest of this guide we assume that your forks are at:
+For the remainder of this guide, we assume that your forks include both the 'dev' branches and the default branch, are up to date, and are at:
 
 * **CIPP** - `https://github.com/goodatforking/CIPP`
 * **CIPP-API** - `https://github.com/goodatforking/CIPP-API` :::
