@@ -26,7 +26,7 @@ This page guides you through getting setup to develop for CIPP using the command
 < Using `npm` which is included with `nodejs` you're going to install the _Azure Static Web Apps CLI_, the _Azure Functions Core Tools_ and the _Azurite_ storage emulator globally.
 
 {% hint style="warning" %}
-Depending on your system setup you may have to run the following commands as an administrator in order for npm to write the package files into its global package folder. Globally installed npm packages are available to all users.
+Run the following commands as an administrator in order for npm to write the package files into its global package folder. Globally installed npm packages are available to all users.
 {% endhint %}
 
 ```bash
@@ -39,6 +39,10 @@ npm install --global azure-functions-core-tools@4 --unsafe-perms true
 
 ```bash
 npm install --global azurite
+```
+
+```bash
+corepack enable
 ```
 
 Now we need to get the files downloaded for CIPP. In order to properly test as you develop the CIPP frontend we need a copy of your CIPP and CIPP-API repositories.
